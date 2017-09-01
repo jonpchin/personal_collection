@@ -1,0 +1,140 @@
+<!-- Written By: Jared Lewis
+   Date: August 6th, 2017-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>--- ×  o ---</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+		<!-- CSS Links -->
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+    	<link rel="stylesheet" type="text/css" href="css/head.css">
+        <link rel="stylesheet" type="text/css" href="css/body.css">
+    	<link rel="stylesheet" type="text/css" href="css/foot.css">
+    </head>
+    <body>
+
+        <div class="main-container">
+            <!-- Header -->
+            <div class="head-container">
+                <!-- The new game button-->
+                <button id="new-game-button">New Game</button>
+
+                <!-- Player 1 -->
+                <div id="player-one-container" class"player-container">
+                    <p class="player-one-label">Human: X</p>
+                </div>
+
+                <!-- Player 2 -->
+                <div id="player-two-container" class"player-container">
+                    <p class="player-two-label">CPU: O</p>
+                </div>
+
+            </div>
+
+            <!-- Body -->
+            <div class="body-container">
+                <!-- The Board -->
+                <table class="board">
+
+                    <!-- Row 1 -->
+                    <tr class="board-row" id="row-one">
+                          <!-- Cells 0-3-->
+                          <td class="board-cell" id="0">
+                              <p>
+
+                              </p>
+                          </td>
+                          <td class="board-cell" id="1">
+                              <p>
+
+                              </p>
+                          </td>
+                          <td class="board-cell" id="2">
+                              <p>
+
+                              </p>
+                          </td>
+                      </tr>
+                      <!-- Row 2-->
+                      <tr class="board-row" id="row-two">
+                          <!-- Cells 3-5-->
+                          <td class="board-cell" id="3">
+                              <p>
+
+                              </p>
+                          </td>
+                          <td class="board-cell" id="4">
+                              <p>
+
+                              </p>
+                          </td>
+                          <td class="board-cell" id="5">
+                              <p>
+
+                              </p>
+                          </td>
+                      </tr>
+                      <!-- Row 3 -->
+                      <tr class="board-row" id="row-three">
+                          <!-- Cells 6-8-->
+                          <td class="board-cell" id="6">
+                              <p>
+
+                              </p>
+                          </td>
+                          <td class="board-cell" id="7">
+                              <p>
+
+                              </p>
+                          </td>
+                          <td class="board-cell" id="8">
+                              <p>
+
+                              </p>
+                          </td>
+                      </tr>
+                </table>
+
+                <!-- Who's turn bar-->
+                <div class="body-whose-turn-container">
+                    <p class="body-whose-turn-container-title-one">Whose turn?</p>
+                    <p class="body-whose-turn-container-title-two" id="whoseTurn">X</p>
+                </div>
+
+                <div class="body-side-bar-title-container">
+                    <p>Chances Of</p>
+                </div>
+                <!-- Side Bar-->
+                <div class="body-side-bar">
+                    <!-- Side bar items -->
+                    <div class="body-side-bar-item" id="list-item-0">
+                        <p>Human winning <br><span id="list-item-value-0"></span>%</p>
+                    </div>
+                    <div class="body-side-bar-item" id="list-item-1">
+                        <p>CPU winning <br><span id="list-item-value-1"></span>%</p>
+                    </div>
+                    <div class="body-side-bar-item" id="list-item-2">
+                        <p>A Draw <span id="list-item-value-2"></span>%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foot -->
+            <div class="foot-container">
+                <div class="foot-container-title">
+                    <p>Tic Tac Toe By <a href="https://github.com/jonpchin">Jonathan Chin</a> & <a href="https://github.com/JaredTsunami">Jared Lewis</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- load jquery before js because jquery code is being used in those files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- link to js source files -->
+        <script src="js/minimax.js" charset="utf-8"></script>
+        <script src="js/GUI_animations.js" charset="utf-8"></script>
+    </body>
+</html>

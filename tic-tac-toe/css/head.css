@@ -1,0 +1,92 @@
+/* Written By: Jared Lewis
+   Date: August 6th, 2017
+----------------------------
+Table of content - Head
+
+1. Head Container
+----------------------------
+*/
+
+/*
+----------------------------
+1. Head Container         */
+.head-container {
+    position: absolute;
+    width: 100%;
+    top: 1%;
+    bottom: 85%;
+    border-radius: 5px;
+    background-color: rgb(240,231,231);
+    box-shadow: 0px 0px 5px rgb(200,200,200);
+}
+
+/* New Game Button */
+#new-game-button {
+    position: absolute;
+    left: 37%;
+    width: 26%;
+    top: 25%;
+    height: 50%;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 12px rgb(200,200,200);
+    font-size: 0.9em;
+    font-weight: 700;
+    color: rgb(69, 24, 4);
+    outline-style: none;
+}
+
+#new-game-button:hover {
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+/* Player */
+#player-one-container {
+    position: absolute;
+    left: 2%;
+    top: 10%;
+    width: 33%;
+    height: 80%;
+    border-radius: 4px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0px 0px 12px rgb(200, 200, 200);
+}
+
+.player-one-label {
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(69, 24, 4);
+}
+
+#player-two-container {
+    position: absolute;
+    right: 2%;
+    top: 10%;
+    width: 33%;
+    height: 80%;
+    border-radius: 3px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 0px 0px 12px rgb(200, 200, 200);
+}
+
+.player-two-label {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(69, 24, 4);
+}

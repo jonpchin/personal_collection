@@ -1,0 +1,31 @@
+/* Written By: Jared Lewis
+   Date: August 6th, 2017
+----------------------------
+Table of content - Foot
+
+1. Foot Container
+----------------------------
+*/
+
+/*
+----------------------------
+1. Foot Container         */
+.foot-container {
+    position: absolute;
+    /*left: 0%;*/
+    width: 100%;
+    /* because the body-container is 8% from the bottom, thus 100 - 8 + 1 (for space) */
+    top: 93%;
+    bottom: 1%;
+    border-radius: 4px;
+    background-color: rgb(240,231,231);
+    box-shadow: 0px 0px 5px rgb(200,200,200);
+}
+
+.foot-container-title {
+    position: absolute;
+    right: 25%;
+    width: 50%;
+    top: 20%;
+    text-align: center;
+}

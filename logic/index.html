@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>logic</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="design.css" rel="stylesheet" type = "text/css"/>
+    </head>
+    <body>
+        <h1><i>Please select 4 colors</i></h1>
+        <div>Welcome to logic. A mastermind clone. Try to guess the four colors that are 
+       randomly picked. If you guess in the correct color in the correct 
+       location then you will see a green dot. If you guess a correct color but not
+       in the right location you will see a yellow dot.
+        </div>
+        <input type="button" value="New Game" onClick=newGame()>
+        <form>
+            
+        <select name="choice1" id= "choice1">
+        <option value="" disabled="disabled" selected="selected">Please select a color</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Red">Red</option>
+        <option value="Purple">Purple</option>
+        <option value="Orange">Orange</option>
+        <option value="Yellow">Yellow</option>     
+        </select>
+        
+        
+        <select name="choice2" id= "choice2">
+        <option value="" disabled="disabled" selected="selected">Please select a color</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Red">Red</option>
+        <option value="Purple">Purple</option>
+        <option value="Orange">Orange</option>
+        <option value="Yellow">Yellow</option>    
+        </select>
+        
+        
+        <select name="choice3" id= "choice3">
+        <option value="" disabled="disabled" selected="selected">Please select a color</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Red">Red</option>
+        <option value="Purple">Purple</option>
+        <option value="Orange">Orange</option>
+        <option value="Yellow">Yellow</option>     
+        </select>
+        
+        <select name="choice4" id="choice4">
+        <option value="" disabled="disabled" selected="selected">Please select a color</option>
+        <option value="Blue">Blue</option>
+        <option value="Green">Green</option>
+        <option value="Red">Red</option>
+        <option value="Purple">Purple</option>
+        <option value="Orange">Orange</option>
+        <option value="Yellow">Yellow</option>    
+        </select>
+            
+        <input type="button" value="Submit" onClick=checkColors()>
+        
+        </form>
+        <script src="main.js" type ="text/javascript"></script>
+    </body>
+</html>

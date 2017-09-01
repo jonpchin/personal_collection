@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--Jonathan Chin-->
+<html>
+    <head>
+        <title>Word Matching</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="design.css" rel="stylesheet" type = "text/css"/>
+        <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/>
+    </head>
+    <body>
+        <div>Word Matching. First load the dictionary. Then enter your substring below to get a list of words that match the substring.</div>
+        <div><input type="text" id="inputBox" name="Input" value="Type your substring here" size="100" /></div>
+        <div><input type="submit" value="Load Dictionary" name="loadDict" onClick=readFile() /></div>
+        <div><input type="submit" id="findWord"  value="Submit" name="submitButton" onClick=searchDict() /></div>
+        <div><input type="submit" value="Clear" id="clearText" onClick=clearText() name="clearButton" /></div>
+        <textarea name="Output" id="outputBox" rows="30" cols="100"  readonly="readonly">
+        </textarea>
+        <script src="main.js"></script>
+    </body>
+</html>

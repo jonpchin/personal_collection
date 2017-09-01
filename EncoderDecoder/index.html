@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Text Encoder and Decoder</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="design.css" rel="stylesheet" type = "text/css"/>
+    </head>
+    <body>
+        <div>Javascript Text Encoder and Decoder. Type the key you wish to use to decrypt/encrypt your message in the small box. Output is displayed in the large box on right.</div>
+        
+        <textarea name="encrypt" rows="20" cols="40" id="input"  class="inlineInput">
+Type the text you want to encrypt/decrypt here
+        </textarea>
+
+        <input type="text" name="encryptKey" id="key" value="Type your key here." size="15" class="inlineInput" />
+        
+        <input type="submit" value="Encode" name="encryption" onClick=cipherEnc() />
+        <input type="submit" value="Decocde" name="decryption" onClick=cipherDec() />
+        <textarea name="output" rows="20" cols="40" id="output" readonly="readonly">
+        </textarea>     
+        
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+.greenLarge {
+    color: green;
+    text-align: center;
+    font-size: xx-large;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.black {
+    color: black;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.greenSmall {
+    color: green;
+
+}
+
+
+.chartreuseSmall {
+    color: chartreuse
+}
+
+.chartreuseLarge {
+    color: chartreuse;
+    text-align: center;
+    font-size: xx-large;
+}

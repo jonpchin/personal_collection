@@ -1,0 +1,38 @@
+/* Written By: Jared Lewis
+   Date: August 6th, 2017
+----------------------------
+Table of content - Default
+
+1. General
+2. Web Container
+----------------------------
+*/
+
+/* import the font(s) */
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Permanent+Marker');
+
+/*
+----------------------------
+1. General       */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+/*
+----------------------------
+1. Web Container       */
+.main-container {
+    position: fixed;
+    left: 60px;
+    top: 60px;
+    /*min-height: 700px;
+    min-width: 600px;*/
+    width: 600px;
+    height: 600px;
+    border-radius: 4px;
+    background-color: none;
+    border: 1px solid red;
+}
