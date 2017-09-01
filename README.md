@@ -1,1 +1,1 @@
-Personal collection of web apps for http://jonc.16mb.com/Sudoku/
+Personal collection of web apps for http://jonc.16mb.com
