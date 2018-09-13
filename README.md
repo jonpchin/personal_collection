@@ -1,1 +1,1 @@
-Personal collection of web apps for http://jonc.16mb.com
+Personal collection of web apps for https://jonpchin.000webhostapp.com/

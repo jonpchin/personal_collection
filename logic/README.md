@@ -1,2 +1,2 @@
 # logic
-Demo can be found at http://jonc.16mb.com/logic/
+Demo can be found at https://jonpchin.000webhostapp.com/logic/
