@@ -254,7 +254,7 @@ function getBestMove(board, piece){
                     return coordinates;
                 }
 
-                var moveValue = minmax(board, 0, false)
+                var moveValue = minmax(board, 0, -10000, 10000, false)
                 board[i][j] = "";
 
                 if(moveValue > bestValue){
@@ -269,7 +269,7 @@ function getBestMove(board, piece){
 }
 
 // depth will allow AI to choose the faster route if given a choice between two moves that allow for a win
-function minmax(board, depth, isMax){
+function minmax(board, depth, alpha, beta, isMax){
 
     var result = checkWhoWon(board);
     if(result === "O"){ // for now O will always be AI
@@ -289,12 +289,17 @@ function minmax(board, depth, isMax){
             for(var j=0; j<3; ++j){
                 if(board[i][j] ===  ""){
                     board[i][j] = "O";
-                    best = Math.max(best, minmax(board, depth+1, false));
+                    best = Math.max(best, minmax(board, depth+1, alpha, beta, false));
                     board[i][j] = "";
+                    alpha = Math.max(alpha, best)
+                    
+                    if(alpha >= beta){
+                        return best;
+                    }
                 }
             }
         }
-        return best - depth;
+        return best;
     }else{ // minimize
 
         var best = 1000;
@@ -303,12 +308,17 @@ function minmax(board, depth, isMax){
             for(var j=0; j<3; ++j){
                 if(board[i][j] ===  ""){
                     board[i][j] = "X";
-                    best = Math.min(best, minmax(board, depth+1, true));
+                    best = Math.min(best, minmax(board, depth+1, alpha, beta, true));
                     board[i][j] = "";
+                    beta = Math.max(beta, best)
+                    
+                    if(alpha >= beta){
+                        return best
+                    }
                 }
             }
         }
-        return best + depth;
+        return best;
     }
 }
 
