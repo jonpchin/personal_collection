@@ -1,1 +1,1 @@
-Personal collection of web apps for https://jonpchin.000webhostapp.com/
+Personal collection of web apps for https://jonpchin.github.io/web_apps
